@@ -15,6 +15,15 @@ import java.sql.Date
 import java.text.ParseException
 import java.util.*
 import java.text.DateFormat;
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.view.Gravity
+import android.view.View
+import android.widget.TextView
+import android.widget.Toast
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -71,6 +80,21 @@ class MainActivity : AppCompatActivity() {
             //show datepicker
             dpd.show()
         }
+
+        val c = Calendar.getInstance()
+        val df = SimpleDateFormat("EEEE dd MMMM yyyy")
+        val formattedDate = df.format(c.time)
+        txtHora.text = "Fecha alctual : $formattedDate"
+    }
+
+    fun Registrar_click(v: View){
+        val acti : Intent = Intent(this,MainActivityEvento::class.java)
+        startActivity(acti)
+    }
+
+    fun Mostrar_click(v: View){
+        val acti : Intent = Intent(this,Main2Activity_recycler::class.java)
+        startActivity(acti)
     }
 
     private fun convFecha(sFec: String): Date{

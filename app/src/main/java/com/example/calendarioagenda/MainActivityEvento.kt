@@ -11,10 +11,10 @@ import kotlinx.android.synthetic.main.content_main_activity_evento.*
 
 class MainActivityEvento : AppCompatActivity() {
 
-    var no: String = ""
+    //var no: String = ""
     var nom: String = ""
     var carr: String = ""
-    var edad: String = "0"
+    var edad: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +58,7 @@ class MainActivityEvento : AppCompatActivity() {
     {
         nom=""
         carr=""
-        edad="0"
+        edad=""
         txtTitulo.setText("")
         txtDescripcion.setText("")
         txtFecha.setText("")
