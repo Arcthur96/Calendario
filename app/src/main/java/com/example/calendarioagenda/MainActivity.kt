@@ -55,36 +55,6 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
             }
         }
-
-        etFecha.setOnClickListener{
-            val c = Calendar.getInstance()
-            var day = c.get(Calendar.DAY_OF_MONTH)
-            var month = c.get(Calendar.MONTH)
-            var year = c.get(Calendar.YEAR)
-            if (etFecha.length() != 0){
-                val sFec : String = etFecha.text.toString()
-                val fecha : Date = convFecha(sFec)
-                day = dayFromDate(fecha)
-                month = monthFromDate(fecha)
-                year = yearFromDate(fecha)
-            }
-
-            val dpd= DatePickerDialog(this,android.R.style.Theme_Holo_Dialog,
-                DatePickerDialog.OnDateSetListener { datePicker, year, month, dayOfMonth ->
-                    val monthOfYear = ""
-                    val sMes = "$monthOfYear"
-                    val iMes = sMes.toInt()+1
-                    etFecha.setText("$year-" + iMes.toString() + "-$dayOfMonth")
-                }, year, month, day)
-
-            //show datepicker
-            dpd.show()
-        }
-
-        val c = Calendar.getInstance()
-        val df = SimpleDateFormat("EEEE dd MMMM yyyy")
-        val formattedDate = df.format(c.time)
-        txtHora.text = "Fecha alctual : $formattedDate"
     }
 
     fun Registrar_click(v: View){
@@ -95,36 +65,6 @@ class MainActivity : AppCompatActivity() {
     fun Mostrar_click(v: View){
         val acti : Intent = Intent(this,Main2Activity_recycler::class.java)
         startActivity(acti)
-    }
-
-    private fun convFecha(sFec: String): Date{
-        var formatoDelTexto = SimpleDateFormat("yyyy-MM-dd")
-        var fecha: Date? = null
-        try {
-            fecha = formatoDelTexto.parse(sFec) as Date?;
-        }catch (ex: ParseException){
-            val sFec1 = "1900-01-01"
-            fecha = formatoDelTexto.parse(sFec1) as Date?;
-        }
-        return fecha!!
-    }
-
-    private fun monthFromDate(date: Date): Int{
-        val calendar = Calendar.getInstance()
-        calendar.time = date
-        return calendar.get(Calendar.MONTH)
-    }
-
-    private fun yearFromDate(date: Date): Int{
-        val calendar = Calendar.getInstance()
-        calendar.time = date
-        return calendar.get(Calendar.YEAR)
-    }
-
-    private fun dayFromDate(date: Date): Int{
-        val calendar = Calendar.getInstance()
-        calendar.time = date
-        return calendar.get(Calendar.DAY_OF_MONTH)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

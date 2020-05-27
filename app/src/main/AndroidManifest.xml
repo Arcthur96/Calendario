@@ -12,6 +12,7 @@
         <activity
             android:name=".MainRegistro"
             android:label="@string/title_activity_main_registro"
+            android:parentActivityName=".MainActivityLogin"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MainActivityLogin"
@@ -20,7 +21,8 @@
         <activity
             android:name=".MainActivityEvento"
             android:label="@string/title_activity_main_evento"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Main2Activity_recycler" />
         <activity
             android:name=".MainActivity"

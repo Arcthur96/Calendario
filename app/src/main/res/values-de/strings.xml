@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taschenbuch</string>
+    <string name="Calendario">Taschenbuch</string>
+    <string name="action_settings">Nachstellung</string>
+    <string name="agregar">Hinzufügen</string>
+    <string name="calendario_de_eventos">Veranstaltungskalender</string>
+    <string name="descripcion_opcional">Charakteristik (optional)</string>
+    <string name="fecha">Datum</string>
+    <string name="registro_de_usuario">Benutzerregister</string>
+    <string name="ingresa_tu_contrase_a">Geben Sie Ihr Passwort ein</string>
+    <string name="ingresa_tu_correo">Geben sie ihre E-Mail Adresse ein</string>
+    <string name="ingresa_tu_nombre">Gib deinen Namen ein</string>
+    <string name="iniciar_sesi_n">Anmeldung</string>
+    <string name="limpiar">löschen</string>
+    <string name="nuevo_evento">neues Event</string>
+    <string name="title_activity_main_evento">Ereignis erstellen</string>
+    <string name="title_activity_main_login">Anmeldung</string>
+    <string name="title_activity_main_registro">Benutzer registrieren</string>
+    <string name="titulo_del_evento">Veranstaltungstitel</string>
+    <string name="todos_los_eventos">Alle Veranstaltungen</string>
+</resources>

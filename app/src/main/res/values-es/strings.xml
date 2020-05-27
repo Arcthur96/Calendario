@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="agregar">Agregar</string>
+    <string name="calendario_de_eventos">Calendario de eventos</string>
+    <string name="descripcion_opcional">Descripcion (opcional)</string>
+    <string name="fecha">Fecha</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu contraseña</string>
+    <string name="ingresa_tu_correo">Ingresa tu correo</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="nuevo_evento">Nuevo evento</string>
+    <string name="registro_de_usuario">Registro de usuario</string>
+    <string name="title_activity_main_evento">Crear evento</string>
+    <string name="title_activity_main_login">Inicio de sesion</string>
+    <string name="title_activity_main_registro">Registrar usuario</string>
+    <string name="titulo_del_evento">Titulo del evento</string>
+    <string name="todos_los_eventos">Todos los eventos</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="Calendario">Agenda</string>
+</resources>
