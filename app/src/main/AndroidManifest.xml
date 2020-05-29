@@ -2,17 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.calendarioagenda">
 
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainRegistro"
             android:label="@string/title_activity_main_registro"
-            android:parentActivityName=".MainActivityLogin"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MainActivityLogin"
@@ -21,8 +24,7 @@
         <activity
             android:name=".MainActivityEvento"
             android:label="@string/title_activity_main_evento"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Main2Activity_recycler" />
         <activity
             android:name=".MainActivity"

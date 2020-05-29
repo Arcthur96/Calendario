@@ -16,12 +16,13 @@
             android:text="Nombre Evento"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tvDescripcion"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:text="Ing. Sistemas Computacionales"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Descripcion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         <TextView
             android:id="@+id/tvFecha"
             android:layout_width="match_parent"

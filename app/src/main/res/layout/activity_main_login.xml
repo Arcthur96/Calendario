@@ -29,7 +29,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:onClick="fbRegistrar_click"
-        app:srcCompat="@drawable/round_assignment_ind_white_18dp" />
+        app:srcCompat="@drawable/baseline_done_white_18dp" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

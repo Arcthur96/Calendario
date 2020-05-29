@@ -19,4 +19,9 @@
     <string name="todos_los_eventos">Todos los eventos</string>
     <string name="iniciar_sesi_n">Iniciar sesión</string>
     <string name="Calendario">Agenda</string>
+    <string name="ingresa_tu_contrase_a1">Ingresa tu contraseña</string>
+    <string name="ingresa_tu_correo1">Ingresa tu correo</string>
+    <string name="ingresa_tu_contrase_aas">Ingresa tu contraseña</string>
+    <string name="ingresa_tu_correo11">Ingresa tu correo</string>
+    <string name="cargar_eventos">Cargar eventos</string>
 </resources>

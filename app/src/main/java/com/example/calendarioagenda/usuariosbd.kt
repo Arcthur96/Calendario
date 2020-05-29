@@ -12,7 +12,7 @@ class usuariosbd (context: Context): SQLiteOpenHelper(context, DATABASE, null,1)
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("Create Table evento(idEvento INTEGER PRIMARY KEY AUTOINCREMENT not null, tituloEvento varchar(30), descripcionEvento varchar(50), fecha time)"
+        db?.execSQL("Create Table evento(idEvento INTEGER PRIMARY KEY AUTOINCREMENT not null, tituloEvento varchar(30), descripcionEvento varchar(50), fecha varchar(50))"
         )
     }
 
