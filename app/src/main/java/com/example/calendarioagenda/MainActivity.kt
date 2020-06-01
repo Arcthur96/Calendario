@@ -92,12 +92,12 @@ class MainActivity : AppCompatActivity() {
                 val sensadoJson = response.getJSONArray("eventos")
                 for (i in 0 until sensadoJson.length()) {
                     //Los nombres del getString son como los arroja el servicio web
-                    //val idprod = sensadoJson.getJSONObject(i).getString("idProd")
+                    val idEvento = sensadoJson.getJSONObject(i).getString("idEvento")
                     val tituloEvento = sensadoJson.getJSONObject(i).getString("tituloEvento")
                     val descripcionEvento = sensadoJson.getJSONObject(i).getString("descripcionEvento")
                     val fecha = sensadoJson.getJSONObject(i).getString("fecha")
                     val sentencia =
-                        "Insert into Producto(idProd,nomProd,Existencia,Precio) values ('$tituloEvento}',${descripcionEvento}, ${fecha})"
+                        "Insert into evento(idEvento, tituloEvento,descripcionEvento,fecha) values (${idEvento},'${tituloEvento}','${descripcionEvento}', '${fecha}')"
                     val res = admin.Ejecuta(sentencia)
                 }
                 Toast.makeText(this, "Eventos cargados ", Toast.LENGTH_LONG).show();
