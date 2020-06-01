@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(acti)
     }
 
-    fun getAllProductos(view: View) {
+    fun getAllEventos(view: View) {
         val wsURL = IP + "/WSAgenda/getEventos.php"
         val admin = usuariosbd(this)
         admin.Ejecuta("DELETE FROM evento")

@@ -50,7 +50,7 @@
         android:layout_marginTop="40dp"
         android:drawableRight="@drawable/baseline_cloud_download_black_18dp"
         android:drawablePadding="12px"
-        android:onClick="getAllProductos"
+        android:onClick="getAllEventos"
         android:text="@string/cargar_eventos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

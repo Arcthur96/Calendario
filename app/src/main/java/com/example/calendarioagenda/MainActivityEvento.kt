@@ -23,6 +23,7 @@ import java.sql.Date
 import java.text.ParseException
 import java.util.*
 
+
 class MainActivityEvento : AppCompatActivity() {
 
     val IP = "http://192.168.1.68" //Direccion IP del servidor web que almacena los servicios web
@@ -106,19 +107,20 @@ class MainActivityEvento : AppCompatActivity() {
             txtTitulo.requestFocus()
         }
         else{
-            leerCajas()
-            val sentencia = "INSERT INTO evento(tituloEvento,descripcionEvento,fecha)"+
-                    "values('$nom','$carr','$edad')"
+            val titulo = txtTitulo.text.toString()
+            val descrip = txtDescripcion.text.toString()
+            val fech = etFecha.text.toString()
+            val sentencia = "INSERT INTO evento(tituloEvento,descripcionEvento,fecha) values('$titulo','$descrip','$fech')"
             val usua = usuariosbd(this)
             if(usua.Ejecuta(sentencia) == 1)
             {
-                val titu = txtTitulo.text.toString()
-                val descrip = txtDescripcion.text.toString()
-                val fec = etFecha.text.toString()
+                val tituloEvento = txtTitulo.text.toString()
+                val descripcionEvento = txtDescripcion.text.toString()
+                val fecha = etFecha.text.toString()
                 var jsonEntrada = JSONObject()
-                jsonEntrada.put("tituloEvento", titu)
-                jsonEntrada.put("descripcionEvento", descrip)
-                jsonEntrada.put("fecha",fec)
+                jsonEntrada.put("tituloEvento", tituloEvento)
+                jsonEntrada.put("descripcionEvento", descripcionEvento)
+                jsonEntrada.put("fecha",fecha)
                 sendRequest(IP + "/WSAgenda/insertEvento.php", jsonEntrada)
 
                 Toast.makeText(this, "Se agrego evento", Toast.LENGTH_SHORT).show();
@@ -129,13 +131,6 @@ class MainActivityEvento : AppCompatActivity() {
                 txtTitulo.requestFocus()
             }
         }
-
-    }
-    fun leerCajas()
-    {
-        nom = txtTitulo.text.toString()
-        carr = txtDescripcion.text.toString()
-        edad = etFecha.text.toString()
     }
 
     fun limpiarCajas(v: View)

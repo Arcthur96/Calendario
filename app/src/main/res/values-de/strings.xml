@@ -24,4 +24,6 @@
     <string name="ingresa_tu_contrase_aas">Geben Sie Ihr Passwort ein</string>
     <string name="ingresa_tu_correo11">Geben sie ihre E-Mail Adresse ein</string>
     <string name="cargar_eventos">Ereignisse hochladen</string>
+    <string name="tu_usuario_esta_en_la_nube">Ist Ihr Benutzer in der Cloud?</string>
+    <string name="cargalo">Downloaden</string>
 </resources>

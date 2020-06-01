@@ -41,8 +41,6 @@ class MainRegistro : AppCompatActivity() {
                 val sentencia = "Insert into usuario (correoUsr,nomUsr,contrasena) values('$corr','$nom','$contra')"
                 val admin = adminbd(this)
                 if (admin.Ejecuta(sentencia) == 1) {
-                    //txtCorr.setText("")
-                    //txtNom.setText("")
                     //Toast.makeText(this, "Usuario registrado", Toast.LENGTH_SHORT).show();
 
                     val correo = txtCorr.text.toString()

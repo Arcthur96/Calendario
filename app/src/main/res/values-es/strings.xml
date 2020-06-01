@@ -24,4 +24,6 @@
     <string name="ingresa_tu_contrase_aas">Ingresa tu contraseña</string>
     <string name="ingresa_tu_correo11">Ingresa tu correo</string>
     <string name="cargar_eventos">Cargar eventos</string>
+    <string name="tu_usuario_esta_en_la_nube">¿Tu usuario esta en la nube?</string>
+    <string name="cargalo">Cargalo</string>
 </resources>
