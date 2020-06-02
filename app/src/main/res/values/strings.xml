@@ -22,7 +22,6 @@
     <string name="todos_los_eventos">All events</string>
     <string name="ingresa_tu_correo11">Insert your e-mail</string>
     <string name="ingresa_tu_contrase_aas">Insert your password</string>
-    <string name="cargalo">Cargalo</string>
     <string name="tu_usuario_esta_en_la_nube">Is your user in the cloud?</string>
     <string name="cargalo">" Load it"</string>
     <string name="cargar_eventos">" Upload events"</string>

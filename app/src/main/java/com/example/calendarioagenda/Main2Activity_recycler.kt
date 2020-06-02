@@ -70,7 +70,7 @@ class Main2Activity_recycler : AppCompatActivity() {
             val no = tupla.getString(0)
             val nom = tupla.getString(1)
             val car = tupla.getString(2)
-            val eda = tupla.getInt(3)
+            val eda = tupla.getString(3)
 
             estudiantes.add(estudiante(no,nom,car,eda))
         }

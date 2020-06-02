@@ -1,10 +1,10 @@
 package com.example.calendarioagenda
 
-class estudiante (idEvento: String, tituloEvento: String, descripcionEvento: String, fecha: Int) {
+class estudiante (idEvento: String, tituloEvento: String, descripcionEvento: String, fecha: String) {
     var noCtrl: String =""
     var nomEst: String=""
     var carrera: String =""
-    var edad: Int = 0
+    var edad: String =""
 
     init{
         this.noCtrl = idEvento
